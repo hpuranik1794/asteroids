@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Asteroids</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- START MENU -->
+  <div id="start">
+    <h1 class="title">ASTEROIDS</h1>
+    <h3 class="year">1979</h3>
+    <div class="start-buttons">
+      <button onclick="change('start', 'game')">New Game</button>
+      <button onclick="change('start', 'instructions')">How to Play?</button>
+    </div>
+  </div>
+
+  <!-- INSTRUCTIONS -->
+  <div id="instructions" style="display: none">
+    <h2 class="title-instructions">Instructions</h2>
+    <div class="controls">
+      <div class="wasd-space">
+        <p class="key-control">Move Forward</p>
+        <div class="key-wrapper">
+          <div class="key-layer">
+            <p class="key">W</p>
+          </div>
+          
+        </div>
+      </div>
+      <div class="wasd-space">
+        <p class="key-control">Turn Left</p>
+        <div class="key-wrapper">
+          <div class="key-layer">
+            <p class="key">A</p>
+          </div>
+        </div>
+      </div>
+      <div class="wasd-space">
+        <p class="key-control">Turn Right</p>
+        <div class="key-wrapper">
+          <div class="key-layer">
+            <p class="key">D</p>
+          </div>
+        </div>
+      </div>
+      <div class="wasd-space">
+        <p class="key-control">Shoot</p>
+        <div class="key-wrapper space">
+          <div class="key-layer">
+            <p class="key">Space</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button onclick="change('instructions', 'game')">
+      Got It!
+    </button>
+  </div>
+
+  <!-- GAME -->
+  <div id="game" style="display: none">
+    <div class="live-score">Score: <span id="score">0</span></div>
+    <canvas style="display: none"></canvas>
+  </div>
+
+  <!-- SCOREBOARD -->
+  <div id="scoreboard" style="display: none">
+    <h2 class="final-score-title">Final Score</h2>
+    <h2 id="final-score">0</h2>
+    <button onclick="change('scoreboard', 'start')">Play Again?</button>
+  </div>
+</body>
+<script src="index.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/p5@1.11.1/lib/p5.min.js"></script>
+</html>
