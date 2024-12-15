@@ -2,7 +2,7 @@
 
 Remake of the famous 1979 Asteroids game by Atari. Developed this application using p5.js, HTML & CSS.
 
-Play now: 
+<a href="https://asteroids-two-gray.vercel.app/">Play now!</a>
 
 ## Images
 <img src="assets/gameplay.png" />
