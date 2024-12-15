@@ -102,14 +102,14 @@ class Player {
       rotate(this.heading); 
       fill(170, 1, 20, 255 - this.limit);
       strokeWeight(3);
-      stroke(170, 1, 20, 220);
+      stroke("red");
 
       beginShape();
         vertex(-10, 10);
         quadraticVertex(0, 0, -10, -10);
         vertex(20, 0);
       endShape(CLOSE);
-      
+
       pop();
     }
   }
@@ -179,7 +179,7 @@ class Projectile {
   draw() {
     push();
     strokeWeight(7);
-    stroke(255, 20, 20, 255);
+    stroke("red");
     point(this.pos.x, this.pos.y);
     pop();
   }
